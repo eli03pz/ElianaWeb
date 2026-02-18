@@ -1,0 +1,34 @@
+name: CI Pipeline ElianaWeb
+
+# Triggers for both direct pushes and Pull Requests to main
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    - name: Install dependencies
+      # 'npm ci' is strictly for automated environments, ensuring exact versions
+      run: npm ci
+
+    - name: Run Linter
+      # Executes the lint script defined in your package.json
+      run: npm run lint
+
+    - name: Build project
+      # Verifies the project compiles successfully for production
+      run: npm run build
