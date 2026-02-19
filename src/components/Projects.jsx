@@ -25,18 +25,12 @@ export default function Projects() {
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                   Development of the digital presence for Magnus Audit, an auditing and financial services firm. The project involved creating their official website, implementing an optimized structure to enhance online visibility and strengthen client communication through modern web tools.
                 </p>
-                <ul className="space-y-2">
-                  <li className="flex items-center text-sm text-gray-500 dark:text-gray-400">
-                    <span className="material-icons-outlined text-primary text-sm mr-2">check_circle</span>
-                    Figma Design & Interactive Prototyping
-                  </li>
-                  <li className="flex items-center text-sm text-gray-500 dark:text-gray-400">
-                    <span className="material-icons-outlined text-primary text-sm mr-2">check_circle</span>
-                    WordPress Development & Deployment
-                  </li>
-                </ul>
+        
                 <div className="pt-4">
-                  <a className="inline-flex items-center text-dark-accent dark:text-white font-medium hover:text-primary dark:hover:text-primary transition-colors" href="https://www.magnusauditec.com/">
+                  <a className="inline-flex items-center text-dark-accent dark:text-white font-medium hover:text-primary dark:hover:text-primary transition-colors" href="https://www.magnusauditec.com/"
+                  target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     View Live Project <span className="material-icons-outlined ml-2 text-sm">arrow_forward</span>
                   </a>
                 </div>
