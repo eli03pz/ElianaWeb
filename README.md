@@ -2,7 +2,7 @@
 
 A modern, responsive, and bilingual personal portfolio built to showcase my web development projects and my journey as a Software Engineering student. 
 
-Check out the live version here: eliana-web-navy.vercel.app
+Check out the live version here: **[eliana-web-navy.vercel.app](https://eliana-web-navy.vercel.app)**
 
 ## 🚀 Key Features
 
